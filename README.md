@@ -1,3 +1,9 @@
+# 2026-01-23
+This branch contains a fix for LLVM coverage issues:
+* [LLVM 157981] (https://github.com/llvm/llvm-project/issues/157981)
+* [LLVM 157959] (https://github.com/llvm/llvm-project/issues/157959)
+* [LLVM 158080] (https://github.com/llvm/llvm-project/issues/158080)
+
 # The LLVM Compiler Infrastructure
 
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/llvm/llvm-project/badge)](https://securityscorecards.dev/viewer/?uri=github.com/llvm/llvm-project)
