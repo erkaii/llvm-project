@@ -1616,10 +1616,11 @@ LineCoverageStats::LineCoverageStats(
 
   // Pick the max count from the non-gap, region entry segments and the
   // wrapped count.
-  if (WrappedSegment)
-    ExecutionCount = WrappedSegment->Count;
-  if (!MinRegionCount)
+  if (!MinRegionCount) {
+    if (WrappedSegment)
+      ExecutionCount = WrappedSegment->Count;
     return;
+  }
   for (const auto *LS : LineSegments)
     if (isStartOfRegion(LS))
       ExecutionCount = std::max(ExecutionCount, LS->Count);
